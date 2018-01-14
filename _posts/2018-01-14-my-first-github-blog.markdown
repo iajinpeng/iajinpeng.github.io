@@ -3,7 +3,7 @@ layout: post
 title: 我的第一篇github博客
 date: 2018-01-14 14:16:20 +0300
 description: webstrom刚装好markdown插件，试试效果
-img: mac-screen-shot.jpg # Add image post (optional)
+img: mac-screen-shot.png # Add image post (optional)
 tags: [Markdown, Blog]
 ---
 黄河远上白云间，一片孤城万仞山
