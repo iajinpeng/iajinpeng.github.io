@@ -7,3 +7,6 @@ github page + jekyll
 
 #### 访问地址
 >[iajinpeng.github.io](https://iajinpeng.github.io)
+
+感谢UI模板作者
+
