@@ -15,3 +15,5 @@ tags: [Markdown, Blog]
 * 2
 
 ![想想办法干他一炮]({{site.baseurl}}/assets/img/zhuzi.jpg)
+
+<h1 style="color: pink;">想想办法干他一炮</h1>

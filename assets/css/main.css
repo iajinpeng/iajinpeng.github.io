@@ -1078,6 +1078,10 @@ table tfoot td {
           transform: scale(1.2);
 }
 
+aside section{
+    text-align: center;
+}
+
 footer .copyright {
   font-size: 14px;
   text-align: center;
