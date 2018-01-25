@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Native开始
-date: 2018-01-14 14:16:20 +0300
+date: 2018-01-25
 description: 对react native一无所知,打算从0开始学
 tags: [JS, React, React Native]
 ---
