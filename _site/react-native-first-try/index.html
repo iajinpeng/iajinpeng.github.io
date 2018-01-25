@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to Jekyll! - 金鹏的blog</title>
+	<title>React Native开始 - 金鹏的blog</title>
 
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="金鹏的blog" property="og:site_name">
   
-    <meta content="Welcome to Jekyll!" property="og:title">
+    <meta content="React Native开始" property="og:title">
   
   
     <meta content="article" property="og:type">
   
   
-    <meta content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes." property="og:description">
+    <meta content="对react native一无所知,打算从0开始学" property="og:description">
   
   
-    <meta content="http://localhost:4000/welcome-to-jekyll/" property="og:url">
+    <meta content="http://localhost:4000/react-native-first-try/" property="og:url">
   
   
-    <meta content="2017-04-06T18:32:20+08:00" property="article:published_time">
+    <meta content="2018-01-14T19:16:20+08:00" property="article:published_time">
     <meta content="http://localhost:4000/about/" property="article:author">
   
   
@@ -31,27 +31,33 @@
   
   
     
+    <meta content="JS" property="article:tag">
+    
+    <meta content="React" property="article:tag">
+    
+    <meta content="React Native" property="article:tag">
+    
   
 
   
-    <meta name="twitter:card" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
+    <meta name="twitter:card" content="对react native一无所知,打算从0开始学">
   
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@">
   
-    <meta name="twitter:title" content="Welcome to Jekyll!">
+    <meta name="twitter:title" content="React Native开始">
   
   
-    <meta name="twitter:url" content="http://localhost:4000/welcome-to-jekyll/">
+    <meta name="twitter:url" content="http://localhost:4000/react-native-first-try/">
   
   
-    <meta name="twitter:description" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
+    <meta name="twitter:description" content="对react native一无所知,打算从0开始学">
   
   
     <meta name="twitter:image:src" content="http://localhost:4000/assets/img/jinpeng.jpg">
   
 
-	<meta name="description" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
+	<meta name="description" content="对react native一无所知,打算从0开始学">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
@@ -126,33 +132,86 @@
     
     <div class="wrap-content">
       <header class="header-page">
-        <h1 class="page-title">Welcome to Jekyll!</h1>
-        <div class="page-date"><span>2017. 04. 06&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+        <h1 class="page-title">React Native开始</h1>
+        <div class="page-date"><span>2018. 01. 14&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
-      <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+      <p>最近公司要做一个混合APP,前端成员还没有确定采用什么技术.有人推荐使用hbuilder App,据说还不错.
+hbuilder编辑器我倒是用过,但是对hbuilder App么–知之甚少.API Cloud之前倒是用过,只不过由于某些原因,那个项目最终夭折了.</p>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>那么现在说到H5混合APP,无非是hbuilder, API cloud, phoneGap以及React Native等.哪个最好用我们姑且不论,因为没有全部用过就没有发言权.但是要论”逼格”最高,当属React Native.
+团队讨论突然蹦出的”React Native”这词,竟莫名的是我感到些许惊讶.因为这个名词在前端界很早就不算陌生了,但我突然发现自己对它可以说是一无所知.
+我对React了解不少,想想闲着也是闲着,不妨开始研究研究React Native.所以本篇文章将要描述的是一个菜鸡的学习路</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<h3 id="项目生成">项目生成</h3>
+<p>找到facebook 的React Native github地址,根据引导完成,与create-react-app一样
+<br />
+首先下载create-react-native-app:</p>
+<blockquote>
+  <p>npm install -g create-react-native-app</p>
+</blockquote>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>然后到自己的目录下运行:</p>
+<blockquote>
+  <p>create-react-native-app AwesomeProject <br />
+cd AwesomeProject <br />
+npm start</p>
+</blockquote>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<p>start之后命令行中出现了一个硕大的二维码,长这样:</p>
+
+<p><img src="/assets/img/react-native-qr.png" alt="" height="400px" /></p>
+
+<h3 id="预览">预览</h3>
+<p>此时说明react-native-app项目创建并运行成功了.然后需要下载 <a href="https://expo.io/learn" target="_blank">Expo</a> , 
+到手机上的App store下载该应用即可,下载完成打开Expo扫描之前的二维码就可以预览我们的react-native-app了</p>
+
+<p><img src="/assets/img/react-app-screenshot.jpg" alt="" height="400px" /></p>
+
+<p>app.js代码</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      &lt;View style={styles.container}&gt;
+        &lt;Text&gt;Open up App.js to start working on your app!&lt;/Text&gt;
+        &lt;Text&gt;Changes you make will automatically reload.&lt;/Text&gt;
+        &lt;Text&gt;Shake your phone to open the developer menu.&lt;/Text&gt;
+	      &lt;Text&gt;黄鹤一去不复返,白云千载空悠悠&lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+</code></pre></div></div>
 
 
       <div class="page-footer">
           <div class="page-tag">
               
+              <a href="/tags#JS" class="tag">&#35; JS</a>
+              
+              <a href="/tags#React" class="tag">&#35; React</a>
+              
+              <a href="/tags#React Native" class="tag">&#35; React Native</a>
+              
           </div>
         <div class="page-share">
-          <a href="javascript:open('http://v.t.sina.com.cn/share/share.php?title=我正在阅读 (Welcome to Jekyll!) 写得很棒!!@iajinpeng&url=http://localhost:4000/welcome-to-jekyll/&content=utf-8', 'newwindow','height=400,width=400,top=100,left=100')"
+          <a href="javascript:open('http://v.t.sina.com.cn/share/share.php?title=我正在阅读 (React Native开始) 写得很棒!!@iajinpeng&url=http://localhost:4000/react-native-first-try/&content=utf-8', 'newwindow','height=400,width=400,top=100,left=100')"
              title="分享到我的微博" rel="nofollow" target="_blank">微博分享</a>
-          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/welcome-to-jekyll/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
-          <a href="https://plus.google.com/share?url=http://localhost:4000/welcome-to-jekyll/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/react-native-first-try/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/react-native-first-try/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
         </div>
       </div>
       <section class="comment-area">

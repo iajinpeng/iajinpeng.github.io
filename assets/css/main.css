@@ -446,10 +446,6 @@ template {
 .highlighter-rouge {
   color: #ce887b;
   font-weight: 400;
-  border: 1px solid #607D8B;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  padding: 0.1rem 0.5rem;
 }
 
 .highlight .hll {
@@ -1135,7 +1131,7 @@ footer .copyright {
 
 .post .post-content {
   padding: 1rem;
-  width: 70%;
+    flex: 1;
 }
 
 .post .post-content .post-date,
@@ -1455,4 +1451,20 @@ a.newer-posts:hover {
   .post .post-content .post-title a {
     font-size: 21px;
   }
+}
+
+.img-view{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(55,55,55,.6);
+}
+.img-view>div{
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    line-height: 100vh;
 }
