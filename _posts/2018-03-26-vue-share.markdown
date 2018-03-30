@@ -159,7 +159,7 @@ methods: {
 ```
 components: {
     Haha: {
-        template: '<p>哈哈: {{name}}</p>',
+        template: '<p>哈哈: { {name}}</p>',
         props: ['name']
     }
 }
