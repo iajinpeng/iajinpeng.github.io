@@ -493,6 +493,8 @@ Vue.use(Vuex);
 
 <h2 id="四与react对比">四、与react对比</h2>
 
+<p>React与Vue都是轻量级的组件库，专注于试图层，两者都可以应用在简单项目中，也可以使用工具及于周边生态扩展为复杂的应用程序。</p>
+
 <h3 id="1相同之处">1.相同之处</h3>
 
 <p>1)数据驱动</p>
@@ -505,23 +507,37 @@ Vue.use(Vuex);
 
 <h3 id="2不同点">2.不同点</h3>
 
-<p>1) 语法差异: JSX vs Templates</p>
-
-<p>在 React 中，所有的组件的渲染功能都依靠 JSX, JSX语法的优势:</p>
-
-<p>在渲染函数中,可以非常自由地使用js临时变量, 使用各种复杂语句,直接引用作用域中的值,</p>
-
-<p>而在Vue的模板语法中,template中的指令内部的js代码只能是一个变量或者单纯的表达式, 不能写二行语句. 复杂一点的数据则只能通过computed, filter实现</p>
-
-<p>相对于JSX语法,Vue的templates语法对于开发者来说更易上手</p>
+<p>1) 语法差异:</p>
+<ul>
+  <li>
+    <p>Vue推荐的是使用 <code class="highlighter-rouge">webpack + vue-loader</code> 的单文件组件格式，
+依然是熟悉的HTML、CSS、JS，但是可以放在一个文件里，结构清晰明了，易于上手</p>
+  </li>
+  <li>
+    <p>React 推荐的做法是 <code class="highlighter-rouge">JSX + inline style</code>,也就是HTML、CSS全部放进js里，虽然不易上手，但是逻辑处理能力远强过模版。
+在渲染函数中,可以非常自由地使用js临时变量, 使用各种复杂语句,直接引用作用域中的值,
+而在Vue的模板语法中,template中的指令内部的js代码只能是一个变量或者单纯的表达式, 不能写二行语句. 复杂一点的数据则只能通过computed, filter实现。</p>
+  </li>
+</ul>
 
 <p>2) 数据流差异</p>
 
-<p>Vue存在双向数据流,子组件可向父组件传值( this.$emit ), 子组件可改变父组件传入的prop , 在不引入vuex的情况下兄弟组件可传值( 通过共同引入的空vue实例作为事件总线 )</p>
+<ul>
+  <li>
+    <p>Vue存在双向数据流,子组件可向父组件传值( <code class="highlighter-rouge">this.$emit</code> ), 子组件可改变父组件传入的prop , 在不引入vuex的情况下兄弟组件可传值( 通过共同引入的空vue实例作为事件总线 )</p>
+  </li>
+  <li>
+    <p>React父子组件之间则为单向数据流，没有双向绑定。</p>
+  </li>
+</ul>
 
-<p>React父子组件之间则为单向数据流</p>
+<p>3）细节性差异</p>
 
-<p>3) vue推荐的是使用 webpack + vue-loader 的单文件组件格式，React 推荐的做法是 JSX + inline style</p>
+<ul>
+  <li>与视图相关的组件本身状态(<code class="highlighter-rouge">react的state, vue的$data</code>)需要更新已刷新视图的方式不一样。
+react的state是不可变（immutable）的，需使用<code class="highlighter-rouge">this.setState()</code>分法来更改，vue则可直接赋值，如<code class="highlighter-rouge">this.msg = someVal</code>，
+（某些情况下，深层对象和数组内部更改不能被vue检测到，此时需使用<code class="highlighter-rouge">$set()</code>方法）。</li>
+</ul>
 
 <h2 id="资料链接">资料链接</h2>
 
