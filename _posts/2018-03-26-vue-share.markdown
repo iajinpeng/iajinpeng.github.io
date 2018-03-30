@@ -153,6 +153,18 @@ methods: {
 <br>
 <img src="https://cn.vuejs.org/images/lifecycle.png" style="max-width: 500px;" />
 
+### 6.组件
+
+和react一样,vue也是秉承一切皆组件式的开发模式。所有的 Vue 组件同时也都是 Vue 的实例。一个最简单的组件实现：
+```
+components: {
+    Haha: {
+        template: '<p>哈哈: {{name}}</p>',
+        props: ['name']
+    }
+}
+```
+
 Vue官方文档: [https://cn.vuejs.org/v2/guide/index.html](https://cn.vuejs.org/v2/guide/index.html)
 
 ## 三、构建完整单页应用
