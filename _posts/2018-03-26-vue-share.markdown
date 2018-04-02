@@ -374,6 +374,9 @@ React与Vue都是轻量级的组件库，专注于试图层，两者都可以应
 
 3）细节性差异
 
+- 访问数据的方式不一样，react组件就包含三种属性，即props, state和普通属性，分别通过this.props.someVal,
+this.state.someVal, this.someVal访问。而vue实例属性很多，均可通过this.$(属性名)访问，而常用的props, data, computed由于vue实例代理了其属性，可直接通过this.someVal访问
+
 - 与视图相关的组件本身状态(`react的state, vue的$data`)需要更新已刷新视图的方式不一样。
 react的state是不可变（immutable）的，需使用`this.setState()`分法来更改，vue则可直接赋值，如`this.msg = someVal`，
 （某些情况下，深层对象和数组内部更改不能被vue检测到，此时需使用`$set()`方法）。
