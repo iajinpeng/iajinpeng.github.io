@@ -390,10 +390,12 @@ react的state是不可变（immutable）的，需使用`this.setState()`分法�
 
 ## 资料链接
 
-Vue官方文档: [https://cn.vuejs.org/v2/guide/index.html](file:///tmp/d20180326-4-16xwko8/%20https:/cn.vuejs.org/v2/guide/index.html)
+Vue官方文档: [https://cn.vuejs.org/v2/guide/index.html](https://cn.vuejs.org/v2/guide/index.html)
 
 Vue-router官方文档: [https://router.vuejs.org/zh-cn/](https://router.vuejs.org/zh-cn/)
 
 Vuex 文档: [https://vuex.vuejs.org/zh-cn/api.html](https://vuex.vuejs.org/zh-cn/api.html)
 
 iView 官方文档 [https://www.iviewui.com/](https://www.iviewui.com/)
+
+Vue前端开发规范: [https://juejin.im/post/5ada9b586fb9a07aaf34c746](https://juejin.im/post/5ada9b586fb9a07aaf34c746)
